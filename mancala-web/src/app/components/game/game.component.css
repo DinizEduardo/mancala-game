@@ -1,0 +1,38 @@
+.wrapper {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #1D3557;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "SUSE";
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+button {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color:#1D3557;
+  background-color: #8FF2B7;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 32px;
+}

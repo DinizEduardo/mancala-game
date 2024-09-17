@@ -1,0 +1,14 @@
+div {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2)
+}
+
+.player-1 {
+  background: radial-gradient(58.33% 58.33% at 68.75% 41.67%, #A8DADC 0%, #457B9D 100%);
+}
+
+.player-2 {
+  background: radial-gradient(58.33% 58.33% at 68.75% 41.67%, #EFAFB4 0%, #E63946 100%);
+}

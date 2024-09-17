@@ -1,0 +1,6 @@
+<div class="pit-wrapper">
+  <div class="pit" (click)="selectPit()">
+    <app-stone [player]="player" *ngFor="let pit of [].constructor(stones); let i = index"></app-stone>
+  </div>
+  <p>{{stones}}</p>
+</div>

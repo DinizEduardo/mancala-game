@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <div class="board">
+    <div class="store">
+      <p class="player-2" [ngClass]="{'animate-name': getCurrentPlayer() == 'PLAYER_2'}">Player 2</p>
+      <div class="big-pit">
+        <app-stone [player]="2" *ngFor="let pit of [].constructor(getPlayerMancala(2)); let i = index"></app-stone>
+      </div>
+    </div>
+
+    <div class="pits">
+      <div class="row top-pits">
+        <app-pit [player]="2" *ngFor="let pit of getPlayer2Pits(); let i = index" [stones]="pit" (pitSelected)="makeMove(i, 'PLAYER_2')"></app-pit>
+      </div>
+
+      <div class="row bottom-pits">
+        <app-pit [player]="1" *ngFor="let pit of getPlayer1Pits(); let i = index" [stones]="pit" (pitSelected)="makeMove(i, 'PLAYER_1')"></app-pit>
+      </div>
+
+    </div>
+
+    <div class="store">
+      <div class="big-pit">
+        <app-stone [player]="1" *ngFor="let pit of [].constructor(getPlayerMancala(1)); let i = index"></app-stone>
+      </div>
+      <p [ngClass]="{'animate-name': getCurrentPlayer() == 'PLAYER_1'}">Player 1</p>
+    </div>
+  </div>
+</div>
